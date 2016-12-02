@@ -1,0 +1,26 @@
+---
+  server:
+    description: "The url to the JIRA"
+    type: "string"
+    required: true
+    secret: false
+  access_token:
+    description: "The access token"
+    type: "string"
+    required: true
+    sercret: false
+  access_token_secret:
+    description: "The access token secret"
+    type: "string"
+    required: true
+    sercret: true
+  consumer_key:
+    description: "The consumer key"
+    type: "string"
+    required: true
+    sercret: true
+  key_cert_path:
+    description: "The path to the certificate key"
+    type: "string"
+    required: true
+    sercret: false

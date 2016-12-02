@@ -1,0 +1,4 @@
+jira
+pycrypto
+pyjwt
+
