@@ -5,10 +5,10 @@ entry_point: lib/delete_project_avatar.py
 description: "Delete a projects avatar."
 parameters:
   project:
-    type: string
+    type: integer
     description: "ID or key of the project to delete the avatar from"
     required: true
   avatar:
-    type: string
+    type: integer
     description: "ID of the avater to delete"
     required: true
