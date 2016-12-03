@@ -8,19 +8,24 @@
     description: "The access token"
     type: "string"
     required: true
-    sercret: false
+    secret: false
   access_token_secret:
     description: "The access token secret"
     type: "string"
     required: true
-    sercret: true
+    secret: true
   consumer_key:
     description: "The consumer key"
     type: "string"
     required: true
-    sercret: true
+    secret: true
   key_cert_path:
     description: "The path to the certificate key"
     type: "string"
     required: true
-    sercret: false
+    secret: false
+  attachment_dir:
+    description: "The path of the downloaded attachments, default /tmp"
+    type: "string"
+    required: false
+    secret: false
