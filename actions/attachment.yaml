@@ -1,0 +1,10 @@
+name: attachment
+runner_type: run-python
+enabled: true
+entry_point: lib/attachment.py
+description: "Get an attachment Resource from the server for the specified ID."
+parameters:
+  id:
+    type: string
+    description: "''"
+    required: true
