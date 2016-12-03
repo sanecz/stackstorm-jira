@@ -1,0 +1,10 @@
+name: add_group
+runner_type: run-python
+enabled: true
+entry_point: lib/add_group.py
+description: "Creates a new group in JIRA."
+parameters:
+  groupname:
+    type: string
+    description: "The name of the group you wish to create."
+    required: true
