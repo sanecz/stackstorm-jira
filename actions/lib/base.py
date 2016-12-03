@@ -39,6 +39,10 @@ class JiraBaseAction(Action):
         try:
             return (True, self._run(*args, **kwargs))
         except JIRAError as e:
-            error_message = json.loads(e.response.text)
-            error_string = u"Error {}: {}".format(e.status_code, " ".join(error_message.get('errorMessages')))
+            try:
+                error_message = json.loads(e.response.text)
+                error_message = " ".join(error_message.get('errorMessages'))
+            except ValueError:
+                error_message = e.response.text
+            error_string = u"Error {}: {}".format(e.status_code, error_message)
             return (False, error_string)
