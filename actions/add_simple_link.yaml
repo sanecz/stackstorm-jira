@@ -1,0 +1,14 @@
+name: add_simple_link
+runner_type: run-python
+enabled: true
+entry_point: lib/add_simple_link.py
+description: "Add a simple remote link from an issue to web resource. This avoids the admin access problems from add_remote_link by just using a simple object and presuming all fields are correct and not requiring more complex application data."
+parameters:
+  object:
+    type: string
+    description: "the dictionary used to create remotelink data"
+    required: true
+  issue:
+    type: string
+    description: "the issue to add the remote link to"
+    required: true
