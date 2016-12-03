@@ -1,0 +1,5 @@
+name: backup_complete
+runner_type: run-python
+enabled: true
+entry_point: lib/backup_complete.py
+description: "Returns boolean based on alternativePercentage and size returned from backup_progress (cloud only)"
