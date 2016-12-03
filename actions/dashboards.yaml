@@ -9,10 +9,10 @@ parameters:
     description: "either favourite or my, the type of dashboards to return"
     required: false
   startAt:
-    type: string
+    type: integer
     description: "index of the first dashboard to return"
     required: false
   maxResults:
-    type: string
+    type: integer
     description: "maximum number of dashboards to return. If maxResults evaluates as False, it will try to get all items in batches."
     required: false
