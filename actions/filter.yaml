@@ -5,6 +5,6 @@ entry_point: lib/filter.py
 description: "Get a filter Resource from the server."
 parameters:
   id:
-    type: string
+    type: integer
     description: "ID of the filter to get."
     required: true
