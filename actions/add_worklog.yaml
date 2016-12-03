@@ -1,0 +1,34 @@
+name: add_worklog
+runner_type: run-python
+enabled: true
+entry_point: lib/add_worklog.py
+description: "Add a new worklog entry on an issue and return a Resource for it."
+parameters:
+  comment:
+    type: string
+    description: "optional worklog comment"
+    required: false
+  timeSpent:
+    type: string
+    description: "a worklog entry with this amount of time spent, e.g. 2d"
+    required: false
+  reduceBy:
+    type: string
+    description: "the amount to reduce the remaining estimate by e.g. 2d"
+    required: false
+  started:
+    type: string
+    description: "Moment when the work is logged, if not specified will default to now"
+    required: false
+  adjustEstimate:
+    type: string
+    description: "(optional) allows the user to provide specific instructions to update the remaining time estimate of the issue. The value can either be new , leave , manual or auto (default)."
+    required: false
+  newEstimate:
+    type: string
+    description: "the new value for the remaining estimate field. e.g. 2d"
+    required: false
+  issue:
+    type: string
+    description: "the issue to add the worklog to"
+    required: true
