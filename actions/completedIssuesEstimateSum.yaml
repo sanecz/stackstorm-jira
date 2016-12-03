@@ -1,0 +1,14 @@
+name: completedIssuesEstimateSum
+runner_type: run-python
+enabled: true
+entry_point: lib/completedIssuesEstimateSum.py
+description: "Return the total completed points this sprint."
+parameters:
+  board_id:
+    type: string
+    description: "''"
+    required: true
+  sprint_id:
+    type: string
+    description: "''"
+    required: true
