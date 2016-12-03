@@ -1,0 +1,14 @@
+name: add_user_to_group
+runner_type: run-python
+enabled: true
+entry_point: lib/add_user_to_group.py
+description: "Adds a user to an existing group."
+parameters:
+  username:
+    type: string
+    description: "Username that will be added to specified group."
+    required: true
+  group:
+    type: string
+    description: "Group that the user will be added to."
+    required: true
