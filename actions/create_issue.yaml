@@ -2,17 +2,25 @@ name: create_issue
 runner_type: run-python
 enabled: true
 entry_point: lib/create_issue.py
-description: "Create a new issue and return an issue Resource for it."
+description: "Create a new issue. See https://developer.atlassian.com/display/JIRADEV/JIRA+REST+API+Example+-+Create+Issue for details"
 parameters:
-  fields:
+  key:
     type: string
-    description: "a dict containing field names and the values to use. If present, all other keyword arguments will be ignored"
-    required: false
-  fieldargs:
-    type: string
-    description: "''"
+    description: "The key of the project"
     required: true
-  prefetch:
+  summary:
     type: string
-    description: "whether to reload the created issue Resource so that all of its data is present in the value returned from this method"
+    description: "The summary of the issue"
+    required: true
+  description:
+    type: string
+    description: "The description of the issue"
+    required: true
+  issuetype:
+    type: string
+    description: "The type of the issue (bug, epic, story, custom...)"
+    required: true
+  fields:
+    type: object
+    description: "a dict containing additional field names and the values to use"
     required: false
