@@ -1,0 +1,10 @@
+name: delete_user
+runner_type: run-python
+enabled: true
+entry_point: lib/delete_user.py
+description: ""
+parameters:
+  username:
+    type: string
+    description: "''"
+    required: true
