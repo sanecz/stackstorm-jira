@@ -2,13 +2,17 @@ name: email_user
 runner_type: run-python
 enabled: true
 entry_point: lib/email_user.py
-description: "TBD:"
+description: "Send a mail"
 parameters:
   body:
     type: string
-    description: "''"
+    description: "Body of the message"
     required: true
   user:
     type: string
-    description: "''"
+    description: "user to send a mail"
     required: true
+  title:
+    type: string
+    description: "Title of the mail"
+    required: false
