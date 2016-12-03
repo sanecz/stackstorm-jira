@@ -1,0 +1,5 @@
+name: current_user
+runner_type: run-python
+enabled: true
+entry_point: lib/current_user.py
+description: ""
