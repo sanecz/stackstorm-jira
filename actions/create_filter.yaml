@@ -2,7 +2,7 @@ name: create_filter
 runner_type: run-python
 enabled: true
 entry_point: lib/create_filter.py
-description: "Create a new filter and return a filter Resource for it."
+description: "Create a new filter"
 parameters:
   favourite:
     type: string
@@ -11,11 +11,11 @@ parameters:
   jql:
     type: string
     description: "query string that defines the filter"
-    required: false
+    required: true
   name:
     type: string
     description: "name of the new filter"
-    required: false
+    required: true
   description:
     type: string
     description: "useful human readable description of the new filter"
