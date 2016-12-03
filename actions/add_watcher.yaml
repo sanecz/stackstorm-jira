@@ -1,0 +1,14 @@
+name: add_watcher
+runner_type: run-python
+enabled: true
+entry_point: lib/add_watcher.py
+description: "Add a user to an issues watchers list."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue affected"
+    required: true
+  watcher:
+    type: string
+    description: "username of the user to add to the watchers list"
+    required: true
