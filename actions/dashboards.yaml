@@ -1,0 +1,18 @@
+name: dashboards
+runner_type: run-python
+enabled: true
+entry_point: lib/dashboards.py
+description: "Return a ResultList of Dashboard resources and a total count."
+parameters:
+  filter:
+    type: string
+    description: "either favourite or my, the type of dashboards to return"
+    required: false
+  startAt:
+    type: string
+    description: "index of the first dashboard to return"
+    required: false
+  maxResults:
+    type: string
+    description: "maximum number of dashboards to return. If maxResults evaluates as False, it will try to get all items in batches."
+    required: false
