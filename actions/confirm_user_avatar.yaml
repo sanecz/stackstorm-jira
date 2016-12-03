@@ -9,6 +9,6 @@ parameters:
     description: "the user to confirm the avatar for"
     required: true
   cropping_properties:
-    type: string
+    type: array
     description: "a dict of cropping properties from create_temp_user_avatar()"
     required: true
