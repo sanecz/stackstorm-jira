@@ -1,0 +1,30 @@
+name: create_component
+runner_type: run-python
+enabled: true
+entry_point: lib/create_component.py
+description: "Create a component inside a project and return a Resource for it."
+parameters:
+  project:
+    type: string
+    description: "key of the project to create the component in"
+    required: true
+  name:
+    type: string
+    description: "name of the component"
+    required: true
+  leadUserName:
+    type: string
+    description: "the username of the user responsible for this component"
+    required: false
+  assigneeType:
+    type: string
+    description: "see the ComponentBean.AssigneeType class for valid values"
+    required: false
+  isAssigneeTypeValid:
+    type: string
+    description: "boolean specifying whether the assignee type is acceptable"
+    required: false
+  description:
+    type: string
+    description: "a description of the component"
+    required: false
