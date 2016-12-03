@@ -1,0 +1,10 @@
+name: filter
+runner_type: run-python
+enabled: true
+entry_point: lib/filter.py
+description: "Get a filter Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the filter to get."
+    required: true
