@@ -1,0 +1,10 @@
+name: create_project
+runner_type: run-python
+enabled: true
+entry_point: lib/create_project.py
+description: "Key is mandatory and has to match JIRA project key requirements, usually only 2-10 uppercase characters. If name is not specified it will use the key value. If assignee is not specified it will use current user. Parameter template_name is used to create a project based on one of the existing project templates. If template_name is not specified, then it should use one of the default values. The returned value should evaluate to False if it fails otherwise it will be the new project id."
+parameters:
+  key:
+    type: string
+    description: "''"
+    required: true
