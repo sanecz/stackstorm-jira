@@ -1,0 +1,14 @@
+name: delete_user_avatar
+runner_type: run-python
+enabled: true
+entry_point: lib/delete_user_avatar.py
+description: "Delete a users avatar."
+parameters:
+  username:
+    type: string
+    description: "the user to delete the avatar from"
+    required: true
+  avatar:
+    type: string
+    description: "ID of the avatar to remove"
+    required: true
