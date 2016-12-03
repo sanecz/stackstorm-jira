@@ -6,5 +6,21 @@ description: "Key is mandatory and has to match JIRA project key requirements, u
 parameters:
   key:
     type: string
-    description: "''"
+    description: "The key of the project"
     required: true
+  name:
+    type: string
+    description: "The name of the project"
+    required: false
+  template_name:
+    type: string
+    description: "The template ot use"
+    required: false
+  type:
+    type: string
+    description: "The type of the project (i.e Business, Software..)"
+    required: false
+  assignee:
+    type: string
+    description: "The assignee for this project"
+    required: false
