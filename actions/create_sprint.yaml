@@ -1,0 +1,14 @@
+name: create_sprint
+runner_type: run-python
+enabled: true
+entry_point: lib/create_sprint.py
+description: "Create a new sprint for the board_id ."
+parameters:
+  board_id:
+    type: string
+    description: "the board to add the sprint to"
+    required: true
+  name:
+    type: string
+    description: "name of the sprint"
+    required: true
