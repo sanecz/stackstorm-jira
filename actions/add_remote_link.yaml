@@ -1,0 +1,26 @@
+name: add_remote_link
+runner_type: run-python
+enabled: true
+entry_point: lib/add_remote_link.py
+description: "Add a remote link from an issue to an external application and returns a remote link Resource for it. object should be a dict containing at least url to the linked external URL and title to display for the link inside JIRA."
+parameters:
+  application:
+    type: string
+    description: "application information for the link (see the above link for details)"
+    required: false
+  destination:
+    type: string
+    description: "the link details to add (see the above link for details)"
+    required: true
+  issue:
+    type: string
+    description: "the issue to add the remote link to"
+    required: true
+  relationship:
+    type: string
+    description: "relationship description for the link (see the above link for details)"
+    required: false
+  globalId:
+    type: string
+    description: "unique ID for the link (see the above link for details)"
+    required: false
