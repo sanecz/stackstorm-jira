@@ -1,0 +1,5 @@
+name: client_info
+runner_type: run-python
+enabled: true
+entry_point: lib/client_info.py
+description: "Get the server this client is connected to."
