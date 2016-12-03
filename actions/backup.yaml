@@ -1,0 +1,14 @@
+name: backup
+runner_type: run-python
+enabled: true
+entry_point: lib/backup.py
+description: "Will call jira export to backup as zipped xml. Returning with success does not mean that the backup process finished."
+parameters:
+  filename:
+    required: false
+    type: string
+    description: "The filename of the backup"
+  attachments:
+    required: false
+    type: boolean
+    description: "Backup the attachments"
