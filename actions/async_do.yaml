@@ -1,0 +1,10 @@
+name: async_do
+runner_type: run-python
+enabled: true
+entry_point: lib/async_do.py
+description: "This will execute all async jobs and wait for them to finish. By default it will run on 10 threads."
+parameters:
+  size:
+    type: string
+    description: "number of threads to run on."
+    required: false
