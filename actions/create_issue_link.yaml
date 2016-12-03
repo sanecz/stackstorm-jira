@@ -5,7 +5,7 @@ entry_point: lib/create_issue_link.py
 description: "Create a link between two issues."
 parameters:
   comment:
-    type: string
+    type: object
     description: "a comment to add to the issues with the link. Should be a dict containing body and visibility fields: body being the text of the comment and visibility being a dict containing two entries: type and value . type is role (or group if the JIRA server has configured comment visibility for groups) and value is the name of the role (or group) to which viewing of this comment will be restricted."
     required: false
   outwardIssue:
