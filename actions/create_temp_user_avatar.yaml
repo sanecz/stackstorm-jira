@@ -5,7 +5,7 @@ entry_point: lib/create_temp_user_avatar.py
 description: "Register an image file as a user avatar. The avatar created is temporary and must be confirmed before it can be used."
 parameters:
   auto_confirm:
-    type: string
+    type: boolean
     description: "whether to automatically confirm the temporary avatar by calling confirm_user_avatar() with the return value of this method."
     required: false
   contentType:
@@ -15,10 +15,6 @@ parameters:
   user:
     type: string
     description: "user to register the avatar for"
-    required: true
-  avatar_img:
-    type: string
-    description: "file-like object containing the avatar"
     required: true
   filename:
     type: string
