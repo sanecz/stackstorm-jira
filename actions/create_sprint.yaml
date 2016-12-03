@@ -12,3 +12,11 @@ parameters:
     type: string
     description: "name of the sprint"
     required: true
+  startDate:
+    type: string
+    description: "date of the beginning of the sprint"
+    required: false
+  endDate:
+    type: string
+    description: "date of the end of the sprint"
+    required: false
