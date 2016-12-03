@@ -9,6 +9,6 @@ parameters:
     description: "ID or key of the project to confirm the avatar in"
     required: true
   cropping_properties:
-    type: string
+    type: array
     description: "a dict of cropping properties from create_temp_project_avatar()"
     required: true
