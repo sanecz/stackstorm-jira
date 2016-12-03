@@ -1,0 +1,22 @@
+name: create_filter
+runner_type: run-python
+enabled: true
+entry_point: lib/create_filter.py
+description: "Create a new filter and return a filter Resource for it."
+parameters:
+  favourite:
+    type: string
+    description: "whether to add this filter to the current users favorites"
+    required: false
+  jql:
+    type: string
+    description: "query string that defines the filter"
+    required: false
+  name:
+    type: string
+    description: "name of the new filter"
+    required: false
+  description:
+    type: string
+    description: "useful human readable description of the new filter"
+    required: false
