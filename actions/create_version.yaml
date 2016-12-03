@@ -2,7 +2,7 @@ name: create_version
 runner_type: run-python
 enabled: true
 entry_point: lib/create_version.py
-description: "Create a version in a project and return a Resource for it."
+description: "Create a version in a project"
 parameters:
   project:
     type: string
@@ -23,4 +23,12 @@ parameters:
   description:
     type: string
     description: "a description of the version"
+    required: false
+  archived:
+    type: boolean
+    description: "is the version archived?"
+    required: false
+  released:
+    type: boolean
+    description: "is the version released?"
     required: false
