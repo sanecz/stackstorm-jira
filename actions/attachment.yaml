@@ -6,5 +6,5 @@ description: "Get an attachment Resource from the server for the specified ID."
 parameters:
   id:
     type: string
-    description: "''"
+    description: "Id of the attachment"
     required: true
