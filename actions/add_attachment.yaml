@@ -1,0 +1,18 @@
+name: add_attachment
+runner_type: run-python
+enabled: true
+entry_point: lib/add_attachment.py
+description: "Attach an attachment to an issue and returns a Resource for it."
+parameters:
+  issue:
+    type: string
+    description: "the issue to attach the attachment to"
+    required: true
+  attachment:
+    type: string
+    description: "file-like object to attach to the issue, also works if it is a string with the filename."
+    required: true
+  filename:
+    type: string
+    description: "optional name for the attached file. If omitted, the file objects name attribute is used. If you aquired the file-like object by any other method than open() , make sure that a name is specified in one way or the other."
+    required: false
