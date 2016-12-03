@@ -1,0 +1,5 @@
+name: favourite_filters
+runner_type: run-python
+enabled: true
+entry_point: lib/favourite_filters.py
+description: "Get a list of filter Resources which are the favourites of the currently authenticated user."
