@@ -1,0 +1,30 @@
+name: create_temp_project_avatar
+runner_type: run-python
+enabled: true
+entry_point: lib/create_temp_project_avatar.py
+description: "Register an image file as a project avatar. The avatar created is temporary and must be confirmed before it can be used."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to create the avatar in"
+    required: true
+  contentType:
+    type: string
+    description: "explicit specification for the avatar images content-type"
+    required: false
+  auto_confirm:
+    type: string
+    description: "( boolean ) whether to automatically confirm the temporary avatar by calling confirm_project_avatar() with the return value of this method."
+    required: false
+  avatar_img:
+    type: string
+    description: "file-like object holding the avatar"
+    required: true
+  filename:
+    type: string
+    description: "name of the avatar file"
+    required: true
+  size:
+    type: string
+    description: "size of the avatar file"
+    required: true
