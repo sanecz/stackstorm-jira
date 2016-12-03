@@ -1,0 +1,5 @@
+name: fields
+runner_type: run-python
+enabled: true
+entry_point: lib/fields.py
+description: "Return a list of all issue fields."
