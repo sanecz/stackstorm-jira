@@ -1,0 +1,18 @@
+name: create_board
+runner_type: run-python
+enabled: true
+entry_point: lib/create_board.py
+description: "Create a new board for the project_ids ."
+parameters:
+  project_ids:
+    type: string
+    description: "the projects to create the board in"
+    required: true
+  name:
+    type: string
+    description: "name of the board"
+    required: true
+  preset:
+    type: string
+    description: "( 'kanban', 'scrum', 'diy' ) what preset to use for this board"
+    required: false
