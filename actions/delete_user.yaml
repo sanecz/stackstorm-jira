@@ -2,9 +2,9 @@ name: delete_user
 runner_type: run-python
 enabled: true
 entry_point: lib/delete_user.py
-description: ""
+description: "Delete an user from JIRA"
 parameters:
   username:
     type: string
-    description: "''"
+    description: "username to delete"
     required: true
