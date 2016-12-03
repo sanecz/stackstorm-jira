@@ -1,0 +1,10 @@
+name: delete_board
+runner_type: run-python
+enabled: true
+entry_point: lib/delete_board.py
+description: "Deletes an agile board."
+parameters:
+  id:
+    type: string
+    description: "''"
+    required: true
