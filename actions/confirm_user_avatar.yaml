@@ -1,0 +1,14 @@
+name: confirm_user_avatar
+runner_type: run-python
+enabled: true
+entry_point: lib/confirm_user_avatar.py
+description: "Confirm the temporary avatar image previously uploaded with the specified cropping."
+parameters:
+  user:
+    type: string
+    description: "the user to confirm the avatar for"
+    required: true
+  cropping_properties:
+    type: string
+    description: "a dict of cropping properties from create_temp_user_avatar()"
+    required: true
