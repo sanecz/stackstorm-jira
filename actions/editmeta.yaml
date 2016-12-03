@@ -1,0 +1,10 @@
+name: editmeta
+runner_type: run-python
+enabled: true
+entry_point: lib/editmeta.py
+description: "Get the edit metadata for an issue."
+parameters:
+  issue:
+    type: string
+    description: "the issue to get metadata for"
+    required: true
