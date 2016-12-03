@@ -5,6 +5,6 @@ entry_point: lib/component_count_related_issues.py
 description: "Get the count of related issues for a component."
 parameters:
   id:
-    type: string
-    description: "( integer ) ID of the component to use"
+    type: integer
+    description: "ID of the component to use"
     required: true
