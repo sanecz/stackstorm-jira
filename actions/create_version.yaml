@@ -1,0 +1,26 @@
+name: create_version
+runner_type: run-python
+enabled: true
+entry_point: lib/create_version.py
+description: "Create a version in a project and return a Resource for it."
+parameters:
+  project:
+    type: string
+    description: "key of the project to create the version in"
+    required: true
+  releaseDate:
+    type: string
+    description: "the release date assigned to the version"
+    required: false
+  startDate:
+    type: string
+    description: "The start date for the version"
+    required: false
+  name:
+    type: string
+    description: "name of the version to create"
+    required: true
+  description:
+    type: string
+    description: "a description of the version"
+    required: false
