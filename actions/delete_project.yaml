@@ -1,0 +1,10 @@
+name: delete_project
+runner_type: run-python
+enabled: true
+entry_point: lib/delete_project.py
+description: "Deletes project from Jira"
+parameters:
+  pid:
+    type: string
+    description: "( str ) JIRA projectID or Project or slug"
+    required: true
