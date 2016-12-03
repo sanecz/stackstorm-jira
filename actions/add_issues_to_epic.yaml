@@ -1,0 +1,18 @@
+name: add_issues_to_epic
+runner_type: run-python
+enabled: true
+entry_point: lib/add_issues_to_epic.py
+description: "Add the issues in issue_keys to the epic_id ."
+parameters:
+  ignore_epics:
+    type: string
+    description: "ignore any issues listed in issue_keys that are epics"
+    required: false
+  issue_keys:
+    type: string
+    description: "the issues to add to the epic"
+    required: true
+  epic_id:
+    type: string
+    description: "the epic to add issues to"
+    required: true
