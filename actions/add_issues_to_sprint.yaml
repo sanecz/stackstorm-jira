@@ -5,7 +5,7 @@ entry_point: lib/add_issues_to_sprint.py
 description: "Add the issues in issue_keys to the sprint_id . The sprint must be started but not completed."
 parameters:
   issue_keys:
-    type: string
+    type: array
     description: "the issues to add to the sprint"
     required: true
   sprint_id:
