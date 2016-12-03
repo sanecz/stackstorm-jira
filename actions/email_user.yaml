@@ -1,0 +1,14 @@
+name: email_user
+runner_type: run-python
+enabled: true
+entry_point: lib/email_user.py
+description: "TBD:"
+parameters:
+  body:
+    type: string
+    description: "''"
+    required: true
+  user:
+    type: string
+    description: "''"
+    required: true
