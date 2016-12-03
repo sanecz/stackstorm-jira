@@ -1,0 +1,5 @@
+name: attachment_meta
+runner_type: run-python
+enabled: true
+entry_point: lib/attachment_meta.py
+description: "Get the attachment metadata."
