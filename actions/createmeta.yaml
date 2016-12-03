@@ -9,7 +9,7 @@ parameters:
     description: "IDs of the projects to filter the results with. Can be a single value or a comma-delimited string. May be combined with projectKeys."
     required: false
   projectKeys:
-    type: string
+    type: array
     description: "keys of the projects to filter the results with. Can be a single value or a comma-delimited string. May be combined with projectIds."
     required: false
   issuetypeNames:
