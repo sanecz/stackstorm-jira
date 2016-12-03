@@ -1,0 +1,10 @@
+name: application_properties
+runner_type: run-python
+enabled: true
+entry_point: lib/application_properties.py
+description: "Return the mutable server application properties."
+parameters:
+  key:
+    type: string
+    description: "the single property to return a value for"
+    required: false
