@@ -21,7 +21,7 @@ parameters:
     description: "see the ComponentBean.AssigneeType class for valid values"
     required: false
   isAssigneeTypeValid:
-    type: string
+    type: boolean
     description: "boolean specifying whether the assignee type is acceptable"
     required: false
   description:
