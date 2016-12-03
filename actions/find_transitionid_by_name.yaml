@@ -1,0 +1,18 @@
+name: find_transitionid_by_name
+runner_type: run-python
+enabled: true
+entry_point: lib/find_transitionid_by_name.py
+description: "Get a transitionid available on the specified issue to the current user. Look at https://developer.atlassian.com/static/rest/jira/6.1.html#d2e1074 for json reference"
+parameters:
+  transition_name:
+    type: string
+    description: "''"
+    required: true
+  issue:
+    type: string
+    description: "ID or key of the issue to get the transitions from"
+    required: true
+  trans_name:
+    type: string
+    description: "iname of transition we are looking for"
+    required: false
