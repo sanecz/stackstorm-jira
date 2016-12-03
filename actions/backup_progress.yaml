@@ -1,0 +1,5 @@
+name: backup_progress
+runner_type: run-python
+enabled: true
+entry_point: lib/backup_progress.py
+description: "Returns status of cloud backup as a dict. Is there a way to get progress for Server version?"
