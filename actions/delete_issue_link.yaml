@@ -5,6 +5,6 @@ entry_point: lib/delete_issue_link.py
 description: "Delete a link between two issues."
 parameters:
   id:
-    type: string
+    type: integer
     description: "ID of the issue link to delete"
     required: true
