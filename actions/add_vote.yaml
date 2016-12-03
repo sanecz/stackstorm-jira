@@ -1,0 +1,10 @@
+name: add_vote
+runner_type: run-python
+enabled: true
+entry_point: lib/add_vote.py
+description: "Register a vote for the current authenticated user on an issue."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to vote on"
+    required: true
