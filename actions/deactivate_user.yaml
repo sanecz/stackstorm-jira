@@ -1,0 +1,10 @@
+name: deactivate_user
+runner_type: run-python
+enabled: true
+entry_point: lib/deactivate_user.py
+description: "Disables/deactivates the user."
+parameters:
+  username:
+    type: string
+    description: "''"
+    required: true
