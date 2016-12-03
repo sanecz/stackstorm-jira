@@ -5,6 +5,6 @@ entry_point: lib/delete_board.py
 description: "Deletes an agile board."
 parameters:
   id:
-    type: string
-    description: "''"
+    type: integer
+    description: "The board to delete"
     required: true
