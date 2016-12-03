@@ -1,0 +1,10 @@
+name: backup_download
+runner_type: run-python
+enabled: true
+entry_point: lib/backup_download.py
+description: "Downloads backup file from WebDAV (cloud only)"
+parameters:
+  filename:
+    required: false
+    type: string
+    description: "The filename of the backup to download"
