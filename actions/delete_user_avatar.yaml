@@ -9,6 +9,6 @@ parameters:
     description: "the user to delete the avatar from"
     required: true
   avatar:
-    type: string
+    type: integer
     description: "ID of the avatar to remove"
     required: true
