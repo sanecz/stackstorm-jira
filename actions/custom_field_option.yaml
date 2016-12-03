@@ -1,0 +1,10 @@
+name: custom_field_option
+runner_type: run-python
+enabled: true
+entry_point: lib/custom_field_option.py
+description: "Get a custom field option Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the custom field to use"
+    required: true
