@@ -11,4 +11,4 @@ parameters:
   transition_name:
     type: string
     description: "iname of transition we are looking for"
-    required: false
+    required: true
