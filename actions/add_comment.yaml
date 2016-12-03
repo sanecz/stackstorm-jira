@@ -12,7 +12,3 @@ parameters:
     type: string
     description: "ID or key of the issue to add the comment to"
     required: true
-  visibility:
-    type: string
-    description: "a dict containing two entries: type and value. type is role (or group if the JIRA server has configured comment visibility for groups) and value is the name of the role (or group) to which viewing of this comment will be restricted."
-    required: false
