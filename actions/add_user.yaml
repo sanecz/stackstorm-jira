@@ -1,0 +1,34 @@
+name: add_user
+runner_type: run-python
+enabled: true
+entry_point: lib/add_user.py
+description: "Creates a new JIRA user"
+parameters:
+  username:
+    type: string
+    description: "( str ) the username of the new user"
+    required: true
+  directoryId:
+    type: string
+    description: "( int ) the directory ID the new user should be a part of"
+    required: false
+  notify:
+    type: string
+    description: "( bool ) Whether or not to send a notification to the new user"
+    required: false
+  active:
+    type: string
+    description: "( bool ) Whether or not to make the new user active upon creation"
+    required: false
+  fullname:
+    type: string
+    description: "( str ) Optional, the full name of the new user"
+    required: false
+  password:
+    type: string
+    description: "( str ) Optional, the password for the new user"
+    required: false
+  email:
+    type: string
+    description: "( str ) email address of the new user"
+    required: true
