@@ -6,9 +6,9 @@ description: "Return the total completed points this sprint."
 parameters:
   board_id:
     type: string
-    description: "''"
+    description: "Board id to retrieve"
     required: true
   sprint_id:
     type: string
-    description: "''"
+    description: "Sprint id to retrieive"
     required: true

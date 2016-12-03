@@ -1,0 +1,14 @@
+name: completed_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/completed_issues.py
+description: "Return the completed issues for board_id and sprint_id ."
+parameters:
+  board_id:
+    type: string
+    description: "the board retrieving issues from"
+    required: true
+  sprint_id:
+    type: string
+    description: "the sprint retieving issues from"
+    required: true
