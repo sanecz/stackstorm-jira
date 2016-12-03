@@ -13,16 +13,12 @@ parameters:
     description: "explicit specification for the avatar images content-type"
     required: false
   auto_confirm:
-    type: string
-    description: "( boolean ) whether to automatically confirm the temporary avatar by calling confirm_project_avatar() with the return value of this method."
+    type: boolean
+    description: "whether to automatically confirm the temporary avatar by calling confirm_project_avatar() with the return value of this method."
     required: false
-  avatar_img:
-    type: string
-    description: "file-like object holding the avatar"
-    required: true
   filename:
     type: string
-    description: "name of the avatar file"
+    description: "path of the avatar file, (must be on the st2 server)"
     required: true
   size:
     type: string
