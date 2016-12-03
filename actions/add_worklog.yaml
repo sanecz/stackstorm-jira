@@ -2,11 +2,11 @@ name: add_worklog
 runner_type: run-python
 enabled: true
 entry_point: lib/add_worklog.py
-description: "Add a new worklog entry on an issue and return a Resource for it."
+description: "Add a new worklog entry on an issue."
 parameters:
   comment:
     type: string
-    description: "optional worklog comment"
+    description: "worklog comment"
     required: false
   timeSpent:
     type: string
@@ -22,7 +22,7 @@ parameters:
     required: false
   adjustEstimate:
     type: string
-    description: "(optional) allows the user to provide specific instructions to update the remaining time estimate of the issue. The value can either be new , leave , manual or auto (default)."
+    description: "Allows the user to provide specific instructions to update the remaining time estimate of the issue. The value can either be new , leave , manual or auto (default)."
     required: false
   newEstimate:
     type: string
