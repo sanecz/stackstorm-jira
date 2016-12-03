@@ -1,0 +1,18 @@
+name: add_comment
+runner_type: run-python
+enabled: true
+entry_point: lib/add_comment.py
+description: "Add a comment from the current authenticated user on the specified issue and return a Resource for it. The issue identifier and comment body are required."
+parameters:
+  body:
+    type: string
+    description: "Text of the comment to add"
+    required: true
+  issue:
+    type: string
+    description: "ID or key of the issue to add the comment to"
+    required: true
+  visibility:
+    type: string
+    description: "a dict containing two entries: type and value. type is role (or group if the JIRA server has configured comment visibility for groups) and value is the name of the role (or group) to which viewing of this comment will be restricted."
+    required: false
