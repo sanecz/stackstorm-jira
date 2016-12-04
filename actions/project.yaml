@@ -1,0 +1,9 @@
+name: project
+runner_type: run-python
+enabled: true
+entry_point: lib/project.py
+description: "Get a project Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID or key of the project to get"
