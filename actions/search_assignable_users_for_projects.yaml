@@ -9,7 +9,7 @@ parameters:
     description: "a string to match usernames against"
     required: true
   startAt:
-    type: string
+    type: integer
     description: "index of the first user to return"
     required: false
   projectKeys:

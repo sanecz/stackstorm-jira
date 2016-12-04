@@ -1,0 +1,30 @@
+name: search_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/search_issues.py
+description: "Get a ResultList of issue Resources matching a JQL search string."
+parameters:
+  json_result:
+    type: string
+    description: "JSON response will be returned when this parameter is set to True. Otherwise, ResultList will be returned."
+    required: false
+  startAt:
+    type: string
+    description: "index of the first issue to return"
+    required: false
+  maxResults:
+    type: string
+    description: "maximum number of issues to return. Total number of results is available in the total attribute of the returned ResultList. If maxResults evaluates as False, it will try to get all issues in batches."
+    required: false
+  jql_str:
+    type: string
+    description: "the JQL search string to use"
+    required: true
+  fields:
+    type: string
+    description: "comma-separated string of issue fields to include in the results"
+    required: false
+  expand:
+    type: string
+    description: "extra information to fetch inside each resource"
+    required: false
