@@ -2,9 +2,9 @@ name: sprint
 runner_type: run-python
 enabled: true
 entry_point: lib/sprint.py
-description: ""
+description: "Get a sprint Ressource"
 parameters:
   id:
     type: string
-    description: "''"
+    description: "id of the sprint"
     required: true

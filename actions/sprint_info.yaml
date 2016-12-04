@@ -1,0 +1,14 @@
+name: sprint_info
+runner_type: run-python
+enabled: true
+entry_point: lib/sprint_info.py
+description: "Return the information about a sprint."
+parameters:
+  board_id:
+    type: string
+    description: "the board retrieving issues from. Deprecated and ignored."
+    required: true
+  sprint_id:
+    type: string
+    description: "the sprint retrieving issues from"
+    required: true
