@@ -1,0 +1,13 @@
+name: version
+runner_type: run-python
+enabled: true
+entry_point: lib/version.py
+description: "Get a version Resource."
+parameters:
+  id:
+    type: string
+    description: "ID of the version to get"
+  expand:
+    type: string
+    description: "extra information to fetch inside each resource"
+    required: false
