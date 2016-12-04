@@ -1,0 +1,12 @@
+name: comment
+runner_type: run-python
+enabled: true
+entry_point: lib/comment.py
+description: "Get a comment Resource from the server for the specified ID."
+parameters:
+  comment:
+    type: string
+    description: "ID of the comment to get"
+  issue:
+    type: string
+    description: "ID or key of the issue to get the comment from"
