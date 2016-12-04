@@ -1,0 +1,26 @@
+name: transition_issue
+runner_type: run-python
+enabled: true
+entry_point: lib/transition_issue.py
+description: "Perform a transition on an issue."
+parameters:
+  comment:
+    type: string
+    description: "Optional String to add as comment to the issue when performing the transition."
+    required: false
+  fields:
+    type: string
+    description: "a dict containing field names and the values to use. If present, all other keyword arguments will be ignored"
+    required: false
+  fieldargs:
+    type: string
+    description: "''"
+    required: true
+  transition:
+    type: string
+    description: "ID or name of the transition to perform"
+    required: true
+  issue:
+    type: string
+    description: "ID or key of the issue to perform the transition on"
+    required: true
