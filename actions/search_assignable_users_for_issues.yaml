@@ -1,0 +1,30 @@
+name: search_assignable_users_for_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/search_assignable_users_for_issues.py
+description: "Get a list of user Resources that match the search string for assigning or creating issues."
+parameters:
+  username:
+    type: string
+    description: "a string to match usernames against"
+    required: true
+  project:
+    type: string
+    description: "filter returned users by permission in this project (expected if a result will be used to create an issue)"
+    required: false
+  startAt:
+    type: string
+    description: "index of the first user to return"
+    required: false
+  issueKey:
+    type: string
+    description: "filter returned users by this issue (expected if a result will be used to edit this issue)"
+    required: false
+  maxResults:
+    type: string
+    description: "maximum number of users to return. If maxResults evaluates as False, it will try to get all items in batches."
+    required: false
+  expand:
+    type: string
+    description: "extra information to fetch inside each resource"
+    required: false
