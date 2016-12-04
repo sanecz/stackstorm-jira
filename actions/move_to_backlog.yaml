@@ -1,0 +1,10 @@
+name: move_to_backlog
+runner_type: run-python
+enabled: true
+entry_point: lib/move_to_backlog.py
+description: "Move issues in issue_keys to the backlog, removing them from all sprints that have not been completed."
+parameters:
+  issue_keys:
+    type: string
+    description: "the issues to move to the backlog"
+    required: true
