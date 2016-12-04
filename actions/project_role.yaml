@@ -1,0 +1,14 @@
+name: project_role
+runner_type: run-python
+enabled: true
+entry_point: lib/project_role.py
+description: "Get a role Resource."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to get the role from"
+    required: true
+  id:
+    type: string
+    description: "ID of the role to get"
+    required: true
