@@ -1,0 +1,9 @@
+name: comments
+runner_type: run-python
+enabled: true
+entry_point: lib/comments.py
+description: "Get a list of comment Resources."
+parameters:
+  issue:
+    type: string
+    description: "the issue to get comments from"
