@@ -1,0 +1,14 @@
+name: removedIssuesEstimateSum
+runner_type: run-python
+enabled: true
+entry_point: lib/removedIssuesEstimateSum.py
+description: "Return the total incompleted points this sprint."
+parameters:
+  board_id:
+    type: string
+    description: "''"
+    required: true
+  sprint_id:
+    type: string
+    description: "''"
+    required: true
