@@ -1,0 +1,22 @@
+name: my_permissions
+runner_type: run-python
+enabled: true
+entry_point: lib/my_permissions.py
+description: "Get a dict of all available permissions on the server."
+parameters:
+  projectId:
+    type: string
+    description: "limit returned permissions to the specified project"
+    required: false
+  issueKey:
+    type: string
+    description: "limit returned permissions to the specified issue"
+    required: false
+  projectKey:
+    type: string
+    description: "limit returned permissions to the specified project"
+    required: false
+  issueId:
+    type: string
+    description: "limit returned permissions to the specified issue"
+    required: false
