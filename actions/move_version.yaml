@@ -1,0 +1,18 @@
+name: move_version
+runner_type: run-python
+enabled: true
+entry_point: lib/move_version.py
+description: "Move a version within a projects ordered version list and return a new version Resource for it. One, but not both, of after and position must be specified."
+parameters:
+  position:
+    type: string
+    description: "the absolute position to move this version to: must be one of First , Last , Earlier , or Later"
+    required: false
+  after:
+    type: string
+    description: "the self attribute of a version to place the specified version after (that is, higher in the list)"
+    required: false
+  id:
+    type: string
+    description: "ID of the version to move"
+    required: true
