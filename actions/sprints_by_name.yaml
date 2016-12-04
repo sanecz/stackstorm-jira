@@ -2,9 +2,9 @@ name: sprints_by_name
 runner_type: run-python
 enabled: true
 entry_point: lib/sprints_by_name.py
-description: ""
+description: "Get a list of sprints by name"
 parameters:
   id:
     type: string
-    description: "''"
+    description: "Name of the sprint"
     required: true
