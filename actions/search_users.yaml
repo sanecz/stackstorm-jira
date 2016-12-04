@@ -5,11 +5,11 @@ entry_point: lib/search_users.py
 description: "Get a list of user Resources that match the specified search string."
 parameters:
   includeInactive:
-    type: string
+    type: boolean
     description: "If true, then inactive users are included in the results."
     required: false
   startAt:
-    type: string
+    type: integer
     description: "index of the first user to return."
     required: false
   user:
@@ -21,6 +21,6 @@ parameters:
     description: "maximum number of users to return. If maxResults evaluates as False, it will try to get all items in batches."
     required: false
   includeActive:
-    type: string
+    type: boolean
     description: "If true, then active users are included in the results."
     required: false

@@ -1,0 +1,10 @@
+name: security_level
+runner_type: run-python
+enabled: true
+entry_point: lib/security_level.py
+description: "Get a security level Resource."
+parameters:
+  id:
+    type: string
+    description: "ID of the security level to get"
+    required: true
