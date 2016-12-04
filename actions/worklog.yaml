@@ -1,0 +1,12 @@
+name: worklog
+runner_type: run-python
+enabled: true
+entry_point: lib/worklog.py
+description: "Get a specific worklog Resource from the server."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to get the worklog from"
+  id:
+    type: string
+    description: "ID of the worklog to get"
