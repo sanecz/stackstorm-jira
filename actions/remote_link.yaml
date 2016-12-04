@@ -1,0 +1,14 @@
+name: remote_link
+runner_type: run-python
+enabled: true
+entry_point: lib/remote_link.py
+description: "Get a remote link Resource from the server."
+parameters:
+  issue:
+    type: string
+    description: "the issue holding the remote link"
+    required: true
+  id:
+    type: string
+    description: "ID of the remote link"
+    required: true
