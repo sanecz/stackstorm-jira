@@ -1,0 +1,9 @@
+name: version_count_unresolved_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/version_count_unresolved_issues.py
+description: "Get the number of unresolved issues for a version."
+parameters:
+  id:
+    type: string
+    description: "ID of the version to count issues for"
