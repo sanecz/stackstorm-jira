@@ -1,0 +1,10 @@
+name: remove_group
+runner_type: run-python
+enabled: true
+entry_point: lib/remove_group.py
+description: "Deletes a group from the JIRA instance."
+parameters:
+  groupname:
+    type: string
+    description: "The group to be deleted from the JIRA instance."
+    required: true
