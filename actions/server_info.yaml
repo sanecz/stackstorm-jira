@@ -1,0 +1,5 @@
+name: server_info
+runner_type: run-python
+enabled: true
+entry_point: lib/server_info.py
+description: "Get a dict of server information for this JIRA instance."
