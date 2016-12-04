@@ -1,0 +1,5 @@
+name: statuses
+runner_type: run-python
+enabled: true
+entry_point: lib/statuses.py
+description: "Get a list of status Resources from the server."
