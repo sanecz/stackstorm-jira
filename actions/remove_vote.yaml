@@ -1,0 +1,10 @@
+name: remove_vote
+runner_type: run-python
+enabled: true
+entry_point: lib/remove_vote.py
+description: "Remove the current authenticated users vote from an issue."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to unvote on"
+    required: true
