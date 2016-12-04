@@ -1,0 +1,14 @@
+name: remove_user_from_group
+runner_type: run-python
+enabled: true
+entry_point: lib/remove_user_from_group.py
+description: "Removes a user from a group."
+parameters:
+  username:
+    type: string
+    description: "The user to remove from the group."
+    required: true
+  groupname:
+    type: string
+    description: "The group that the user will be removed from."
+    required: true
