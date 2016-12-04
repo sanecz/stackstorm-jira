@@ -1,0 +1,14 @@
+name: set_application_property
+runner_type: run-python
+enabled: true
+entry_point: lib/set_application_property.py
+description: "Set the application property."
+parameters:
+  value:
+    type: string
+    description: "value to assign to the property"
+    required: true
+  key:
+    type: string
+    description: "key of the property to set"
+    required: true
