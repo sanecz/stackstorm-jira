@@ -1,0 +1,9 @@
+name: version_count_related_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/version_count_related_issues.py
+description: "Get a dict of the counts of issues fixed and affected by a version."
+parameters:
+  id:
+    type: string
+    description: "the version to count issues for"
