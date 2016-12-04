@@ -1,0 +1,10 @@
+name: sprints_by_name
+runner_type: run-python
+enabled: true
+entry_point: lib/sprints_by_name.py
+description: ""
+parameters:
+  id:
+    type: string
+    description: "''"
+    required: true

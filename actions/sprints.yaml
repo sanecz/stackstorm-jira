@@ -17,10 +17,10 @@ parameters:
     description: "Used only by old GreenHopper API to fetch additional information like startDate, endDate, completeDate, much slower because it requires an additional requests for each sprint. New JIRA Agile API always returns this information without a need for additional requests."
     required: false
   startAt:
-    type: string
+    type: integer
     description: "the index of the first sprint to return (0 based)"
     required: false
   maxResults:
-    type: string
+    type: integer
     description: "the maximum number of sprints to return"
     required: false
