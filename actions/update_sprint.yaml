@@ -1,0 +1,9 @@
+name: update_sprint
+runner_type: run-python
+enabled: true
+entry_point: lib/update_sprint.py
+description: ""
+parameters:
+  id:
+    type: string
+    description: "''"
