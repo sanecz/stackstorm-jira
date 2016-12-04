@@ -1,0 +1,9 @@
+name: priority
+runner_type: run-python
+enabled: true
+entry_point: lib/priority.py
+description: "Get a priority Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the priority to get"
