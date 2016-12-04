@@ -1,0 +1,5 @@
+name: resolutions
+runner_type: run-python
+enabled: true
+entry_point: lib/resolutions.py
+description: "Get a list of resolution Resources from the server."
