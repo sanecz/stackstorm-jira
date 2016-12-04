@@ -1,0 +1,9 @@
+name: issue_link
+runner_type: run-python
+enabled: true
+entry_point: lib/issue_link.py
+description: "Get an issue link Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the issue link to get"
