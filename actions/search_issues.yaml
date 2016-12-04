@@ -5,11 +5,11 @@ entry_point: lib/search_issues.py
 description: "Get a ResultList of issue Resources matching a JQL search string."
 parameters:
   json_result:
-    type: string
+    type: boolean
     description: "JSON response will be returned when this parameter is set to True. Otherwise, ResultList will be returned."
     required: false
   startAt:
-    type: string
+    type: integer
     description: "index of the first issue to return"
     required: false
   maxResults:

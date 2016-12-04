@@ -1,0 +1,26 @@
+name: search_users
+runner_type: run-python
+enabled: true
+entry_point: lib/search_users.py
+description: "Get a list of user Resources that match the specified search string."
+parameters:
+  includeInactive:
+    type: string
+    description: "If true, then inactive users are included in the results."
+    required: false
+  startAt:
+    type: string
+    description: "index of the first user to return."
+    required: false
+  user:
+    type: string
+    description: "a string to match usernames, name or email against."
+    required: true
+  maxResults:
+    type: string
+    description: "maximum number of users to return. If maxResults evaluates as False, it will try to get all items in batches."
+    required: false
+  includeActive:
+    type: string
+    description: "If true, then active users are included in the results."
+    required: false
