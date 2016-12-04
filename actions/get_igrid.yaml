@@ -1,0 +1,15 @@
+name: get_igrid
+runner_type: run-python
+enabled: true
+entry_point: lib/get_igrid.py
+description: ""
+parameters:
+  customfield:
+    type: string
+    description: "''"
+  issueid:
+    type: string
+    description: "''"
+  schemeid:
+    type: string
+    description: "''"
