@@ -1,0 +1,9 @@
+name: user_avatars
+runner_type: run-python
+enabled: true
+entry_point: lib/user_avatars.py
+description: "Get a dict of avatars for the specified user."
+parameters:
+  username:
+    type: string
+    description: "the username to get avatars for"
