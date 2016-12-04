@@ -1,0 +1,14 @@
+name: set_project_avatar
+runner_type: run-python
+enabled: true
+entry_point: lib/set_project_avatar.py
+description: "Set a projects avatar."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to set the avatar on"
+    required: true
+  avatar:
+    type: string
+    description: "ID of the avatar to set"
+    required: true
