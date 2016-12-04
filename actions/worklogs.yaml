@@ -1,0 +1,9 @@
+name: worklogs
+runner_type: run-python
+enabled: true
+entry_point: lib/worklogs.py
+description: "Get a list of worklog Resources from the server for an issue."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to get worklogs from"
