@@ -1,0 +1,10 @@
+name: project_components
+runner_type: run-python
+enabled: true
+entry_point: lib/project_components.py
+description: "Get a list of component Resources present on a project."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to get components from"
+    required: true
