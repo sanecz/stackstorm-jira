@@ -1,0 +1,14 @@
+name: incompleted_issues
+runner_type: run-python
+enabled: true
+entry_point: lib/incompleted_issues.py
+description: "Return the completed issues for the sprint"
+parameters:
+  board_id:
+    type: string
+    description: "''"
+    required: true
+  sprint_id:
+    type: string
+    description: "''"
+    required: true
