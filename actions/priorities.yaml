@@ -1,0 +1,5 @@
+name: priorities
+runner_type: run-python
+enabled: true
+entry_point: lib/priorities.py
+description: "Get a list of priority Resources from the server."
