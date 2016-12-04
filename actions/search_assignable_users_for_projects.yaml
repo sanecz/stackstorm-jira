@@ -1,0 +1,22 @@
+name: search_assignable_users_for_projects
+runner_type: run-python
+enabled: true
+entry_point: lib/search_assignable_users_for_projects.py
+description: "Get a list of user Resources that match the search string and can be assigned issues for projects."
+parameters:
+  username:
+    type: string
+    description: "a string to match usernames against"
+    required: true
+  startAt:
+    type: string
+    description: "index of the first user to return"
+    required: false
+  projectKeys:
+    type: string
+    description: "comma-separated list of project keys to check for issue assignment permissions"
+    required: true
+  maxResults:
+    type: string
+    description: "maximum number of users to return. If maxResults evaluates as False, it will try to get all users in batches."
+    required: false

@@ -13,7 +13,7 @@ parameters:
     description: "filter returned users by permission in this project (expected if a result will be used to create an issue)"
     required: false
   startAt:
-    type: string
+    type: integer
     description: "index of the first user to return"
     required: false
   issueKey:
