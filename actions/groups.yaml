@@ -9,7 +9,7 @@ parameters:
     description: "filter groups by name with this string"
     required: false
   maxResults:
-    type: string
+    type: integer
     description: "maximum results to return. defaults to 9999"
     required: false
   exclude:
