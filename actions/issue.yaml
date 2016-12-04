@@ -1,0 +1,17 @@
+name: issue
+runner_type: run-python
+enabled: true
+entry_point: lib/issue.py
+description: "Get an issue Resource from the server."
+parameters:
+  fields:
+    type: string
+    description: "comma-separated string of issue fields to include in the results"
+    required: false
+  id:
+    type: string
+    description: "ID or key of the issue to get"
+  expand:
+    type: string
+    description: "extra information to fetch inside each resource"
+    required: false
