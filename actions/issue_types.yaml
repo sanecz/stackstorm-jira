@@ -1,0 +1,5 @@
+name: issue_types
+runner_type: run-python
+enabled: true
+entry_point: lib/issue_types.py
+description: "Get a list of issue type Resources from the server."
