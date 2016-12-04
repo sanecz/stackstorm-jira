@@ -1,0 +1,10 @@
+name: project_roles
+runner_type: run-python
+enabled: true
+entry_point: lib/project_roles.py
+description: "Get a dict of role names to resource locations for a project."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to get roles from"
+    required: true
