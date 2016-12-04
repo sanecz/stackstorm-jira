@@ -1,0 +1,14 @@
+name: rank
+runner_type: run-python
+enabled: true
+entry_point: lib/rank.py
+description: "Rank an issue before another using the default Ranking field, the one named Rank."
+parameters:
+  next_issue:
+    type: string
+    description: "issue key of the second issue."
+    required: true
+  issue:
+    type: string
+    description: "issue key of the issue to be ranked before the second one."
+    required: true
