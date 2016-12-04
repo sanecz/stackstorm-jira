@@ -1,0 +1,9 @@
+name: votes
+runner_type: run-python
+enabled: true
+entry_point: lib/votes.py
+description: "Get a votes Resource from the server."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to get the votes for"
