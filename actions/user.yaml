@@ -1,0 +1,13 @@
+name: user
+runner_type: run-python
+enabled: true
+entry_point: lib/user.py
+description: "Get a user Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the user to get"
+  expand:
+    type: string
+    description: "extra information to fetch inside each resource"
+    required: false
