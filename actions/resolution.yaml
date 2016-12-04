@@ -1,0 +1,10 @@
+name: resolution
+runner_type: run-python
+enabled: true
+entry_point: lib/resolution.py
+description: "Get a resolution Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the resolution to get"
+    required: true
