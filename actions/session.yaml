@@ -1,0 +1,5 @@
+name: session
+runner_type: run-python
+enabled: true
+entry_point: lib/session.py
+description: "Get a dict of the current authenticated users session information."
