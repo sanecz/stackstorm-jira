@@ -5,10 +5,10 @@ entry_point: lib/reindex.py
 description: "Start jira re-indexing. Returns True if reindexing is in progress or not needed, or False."
 parameters:
   force:
-    type: string
+    type: boolean
     description: "reindex even if JIRA doesntt say this is needed, False by default."
     required: false
   background:
-    type: string
+    type: boolean
     description: "reindex inde background, slower but does not impact the users, defaults to True."
     required: false
