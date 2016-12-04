@@ -1,0 +1,26 @@
+name: search_allowed_users_for_issue
+runner_type: run-python
+enabled: true
+entry_point: lib/search_allowed_users_for_issue.py
+description: "Get a list of user Resources that match a username string and have browse permission for the issue or project."
+parameters:
+  maxResults:
+    type: string
+    description: "maximum number of users to return. If maxResults evaluates as False, it will try to get all items in batches."
+    required: false
+  startAt:
+    type: string
+    description: "index of the first user to return."
+    required: false
+  user:
+    type: string
+    description: "a string to match usernames against."
+    required: true
+  issueKey:
+    type: string
+    description: "find users with browse permission for this issue."
+    required: false
+  projectKey:
+    type: string
+    description: "find users with browse permission for this project."
+    required: false
