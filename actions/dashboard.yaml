@@ -1,0 +1,9 @@
+name: dashboard
+runner_type: run-python
+enabled: true
+entry_point: lib/dashboard.py
+description: "Get a dashboard Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the dashboard to get."
