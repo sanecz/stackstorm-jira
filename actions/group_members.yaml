@@ -1,0 +1,10 @@
+name: group_members
+runner_type: run-python
+enabled: true
+entry_point: lib/group_members.py
+description: "Return a hash or users with their information. Requires JIRA 6.0 or will raise NotImplemented."
+parameters:
+  group:
+    type: string
+    description: "''"
+    required: true
