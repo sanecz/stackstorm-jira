@@ -1,0 +1,9 @@
+name: component
+runner_type: run-python
+enabled: true
+entry_point: lib/component.py
+description: "Get a component Resource from the server."
+parameters:
+  id:
+    type: string
+    description: "ID of the component to get"
