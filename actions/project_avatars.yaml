@@ -1,0 +1,10 @@
+name: project_avatars
+runner_type: run-python
+enabled: true
+entry_point: lib/project_avatars.py
+description: "Get a dict of all avatars for a project visible to the current authenticated user."
+parameters:
+  project:
+    type: string
+    description: "ID or key of the project to get avatars for"
+    required: true
