@@ -1,0 +1,5 @@
+name: myself
+runner_type: run-python
+enabled: true
+entry_point: lib/myself.py
+description: "Get a dict of server information for this JIRA instance."
