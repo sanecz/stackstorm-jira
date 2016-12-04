@@ -1,0 +1,5 @@
+name: kill_session
+runner_type: run-python
+enabled: true
+entry_point: lib/kill_session.py
+description: "Destroy the session of the current authenticated user."
