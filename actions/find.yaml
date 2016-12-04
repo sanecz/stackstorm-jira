@@ -1,0 +1,13 @@
+name: find
+runner_type: run-python
+enabled: true
+entry_point: lib/find.py
+description: "Get a Resource object for any addressable resource on the server."
+parameters:
+  resource_format:
+    type: string
+    description: "the subpath to the resource string"
+  ids:
+    type: string
+    description: "( tuple or None ) values to substitute in the resource_format string"
+    required: false
