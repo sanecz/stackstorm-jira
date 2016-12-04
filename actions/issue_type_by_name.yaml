@@ -1,0 +1,9 @@
+name: issue_type_by_name
+runner_type: run-python
+enabled: true
+entry_point: lib/issue_type_by_name.py
+description: ""
+parameters:
+  name:
+    type: string
+    description: "''"
