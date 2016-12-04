@@ -1,0 +1,26 @@
+name: sprints
+runner_type: run-python
+enabled: true
+entry_point: lib/sprints.py
+description: "Get a list of sprint GreenHopperResources."
+parameters:
+  board_id:
+    type: string
+    description: "the board to get sprints from"
+    required: true
+  state:
+    type: string
+    description: "Filters results to sprints in specified states. Valid values: future, active, closed. You can define multiple states separated by commas"
+    required: false
+  extended:
+    type: string
+    description: "Used only by old GreenHopper API to fetch additional information like startDate, endDate, completeDate, much slower because it requires an additional requests for each sprint. New JIRA Agile API always returns this information without a need for additional requests."
+    required: false
+  startAt:
+    type: string
+    description: "the index of the first sprint to return (0 based)"
+    required: false
+  maxResults:
+    type: string
+    description: "the maximum number of sprints to return"
+    required: false
