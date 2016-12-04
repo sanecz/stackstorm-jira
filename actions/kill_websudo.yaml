@@ -1,0 +1,5 @@
+name: kill_websudo
+runner_type: run-python
+enabled: true
+entry_point: lib/kill_websudo.py
+description: "Destroy the users current WebSudo session."
