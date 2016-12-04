@@ -6,9 +6,9 @@ description: "Return the completed issues for the sprint"
 parameters:
   board_id:
     type: string
-    description: "''"
+    description: "board id"
     required: true
   sprint_id:
     type: string
-    description: "''"
+    description: "sprint id"
     required: true

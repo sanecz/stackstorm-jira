@@ -1,0 +1,14 @@
+name: rename_user
+runner_type: run-python
+enabled: true
+entry_point: lib/rename_user.py
+description: "Rename a JIRA user. Current implementation relies on third party plugin but in the future it may use embedded JIRA functionality."
+parameters:
+  new_user:
+    type: string
+    description: "string with username login"
+    required: true
+  old_user:
+    type: string
+    description: "string with username login"
+    required: true
