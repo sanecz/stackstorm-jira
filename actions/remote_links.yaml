@@ -1,0 +1,10 @@
+name: remote_links
+runner_type: run-python
+enabled: true
+entry_point: lib/remote_links.py
+description: "Get a list of remote link Resources from an issue."
+parameters:
+  issue:
+    type: string
+    description: "the issue to get remote links from"
+    required: true
