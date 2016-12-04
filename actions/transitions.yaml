@@ -1,0 +1,17 @@
+name: transitions
+runner_type: run-python
+enabled: true
+entry_point: lib/transitions.py
+description: "Get a list of the transitions available on the specified issue to the current user."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to get the transitions from"
+  id:
+    type: string
+    description: "if present, get only the transition matching this ID"
+    required: false
+  expand:
+    type: string
+    description: "extra information to fetch inside each transition"
+    required: false
