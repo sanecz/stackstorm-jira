@@ -1,0 +1,14 @@
+name: remove_watcher
+runner_type: run-python
+enabled: true
+entry_point: lib/remove_watcher.py
+description: "Remove a user from an issues watch list."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue affected"
+    required: true
+  watcher:
+    type: string
+    description: "username of the user to remove from the watchers list"
+    required: true
