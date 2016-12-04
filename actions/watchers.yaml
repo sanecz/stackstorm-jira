@@ -1,0 +1,9 @@
+name: watchers
+runner_type: run-python
+enabled: true
+entry_point: lib/watchers.py
+description: "Get a watchers Resource from the server for an issue."
+parameters:
+  issue:
+    type: string
+    description: "ID or key of the issue to get the watchers for"
