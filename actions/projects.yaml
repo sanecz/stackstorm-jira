@@ -1,0 +1,5 @@
+name: projects
+runner_type: run-python
+enabled: true
+entry_point: lib/projects.py
+description: "Get a list of project Resources from the server visible to the current authenticated user."
