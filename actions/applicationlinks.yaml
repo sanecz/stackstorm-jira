@@ -4,7 +4,7 @@ enabled: true
 entry_point: lib/applicationlinks.py
 description: "List of application links"
 parameters:
-  <td class="field-body">json</td>:
+  json:
     type: string
     description: ""
     required: false
