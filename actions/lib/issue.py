@@ -3,5 +3,6 @@ from base import JiraBaseAction
 
 class JiraIssue(JiraBaseAction):
     def _run(self, id, **kwargs):
-      return self.jira.issue(id)
+      issue = self.jira.issue(id, **kwargs)
+      return issue.raw
 
