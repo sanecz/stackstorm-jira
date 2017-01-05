@@ -11,5 +11,5 @@ class JiraCreateIssue(JiraBaseAction):
       }
       if fields:
           all_fields.update(fields)
-      return self.jira.create_issue(all_fields)
+      return self.jira.create_issue(fields=all_fields)
 

@@ -39,10 +39,19 @@ class JiraBaseAction(Action):
         try:
             return (True, self._run(*args, **kwargs))
         except JIRAError as e:
+            headers = {'response': {}, 'request': {}}
             try:
                 error_message = json.loads(e.response.text)
                 error_message = " ".join(error_message.get('errorMessages'))
             except ValueError:
                 error_message = e.response.text
-            error_string = u"Error {}: {}".format(e.status_code, error_message)
+            if hasattr(e.response, 'text'):
+                headers['response'].setdefault('text', e.response.text)
+            if hasattr(e.request, 'text'):
+                headers['request'].setdefault('text', e.request.text)
+            if hasattr(e.response, 'headers'):
+                headers['response'].setdefault('headers', e.response.headers)
+            if hasattr(e.request, 'headers'):
+                headers['request'].setdefault('headers', e.request.headers)
+            error_string = u"Error {}: {}\n\nDetails: {}".format(e.status_code, error_message, headers)
             return (False, error_string)
